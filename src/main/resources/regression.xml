@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Regression for RStudio" verbose="3">
+
+    <!-- UI Testing -->
+    <test name="Regression Tests">
+        <groups>
+            <run>
+                <include name="ui"/>
+                <include name="api"/>
+            </run>
+        </groups>
+        <packages>
+            <package name="com.rstudio.test.*"/>
+        </packages>
+    </test>
+
+
+
+
+</suite>
